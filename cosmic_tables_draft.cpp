@@ -3,12 +3,12 @@
 
 using namespace std;
 
-short main()
+int main()
 {
     short n,c,r;
-    scanf("%d", &c);
-    scanf("%d", &r);
-    scanf("%d", &n);
+    scanf("%hd", &c);
+    scanf("%hd", &r);
+    scanf("%hd", &n);
 
     short table[c][r];
     short cmdc,cmdr;
@@ -18,15 +18,15 @@ short main()
     {
         for (short j=0; j<r; j++)
         {
-            scanf("%d", &table[i][j]);
+            scanf("%hd", &table[i][j]);
         }
     }
 
     for (short k=0; k<n; k++)
     {
         scanf("%s", &cmd[0]);
-        scanf("%d", &cmdc);
-        scanf("%d", &cmdr);
+        scanf("%hd", &cmdc);
+        scanf("%hd", &cmdr);
 
         if (cmd[0] == 'c')
         {
